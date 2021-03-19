@@ -309,3 +309,11 @@ function clear_object(o) {
 
     return o;
 }
+
+
+/**
+ * Função para aplicar uma máscara em uma string.
+ * ex.: setMask('88999998888', '(**) *****-****') // (88) 99999-8888
+ */
+const setMask = (value, mask, ini = 0) => mask.replace(/\*/g, () => value[ini++] || '')
+
