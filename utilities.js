@@ -317,3 +317,13 @@ function clear_object(o) {
  */
 const setMask = (value, mask, ini = 0) => mask.replace(/\*/g, () => value[ini++] || '')
 
+
+/**
+ * Função para importar scripts apartir do js
+ * ex.: importScript("../../utils.js");
+ */
+function importScript(src) {
+  let script = document.createElement('script');
+  script.src = src;
+  document.body.append(script);
+}
