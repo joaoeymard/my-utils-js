@@ -275,8 +275,10 @@ function object_text(obj) {
 /**
  * Aguardar N tempo antes de executar uma função
  */
-const debounce = (fn, wait = 1500, time) => (...args) =>
-  clearTimeout(time, (time = setTimeout(() => fn(...args), wait)));
+const debounce =
+  (fn, wait = 1500, time) =>
+  (...args) =>
+    clearTimeout(time, (time = setTimeout(() => fn(...args), wait)));
 
 /**
  * Formatando para cpf ou cnpj
@@ -345,6 +347,12 @@ function clear_object(o) {
 const setMask = (value, mask, ini = 0) =>
   mask.replace(/\*/g, () => value[ini++] || "");
 
-module.exports = {
-  sum,
-};
+/**
+ * Função para importar scripts apartir do js
+ * ex.: importScript("../../utils.js");
+ */
+function importScript(src) {
+  let script = document.createElement("script");
+  script.src = src;
+  document.body.append(script);
+}
