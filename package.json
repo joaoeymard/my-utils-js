@@ -1,0 +1,22 @@
+{
+  "name": "my-utils",
+  "version": "1.0.0",
+  "description": "meu canivete suíço de funções. Alguns soluções prontas para o dia a dia",
+  "main": "teste.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaoeymard/my-utils-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaoeymard/my-utils-js/issues"
+  },
+  "homepage": "https://github.com/joaoeymard/my-utils-js#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
